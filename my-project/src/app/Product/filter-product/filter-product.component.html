@@ -1,0 +1,54 @@
+<!-- <div class="select" tabindex="1">
+    <input class="selectopt" name="test" type="radio" id="opt1" (click)="getAllProducts()" checked>
+    <label for="opt1" class="option">Tất cả</label>
+
+    <input class="selectopt" name="test" type="radio" id="opt2" (click)="getCandy()">
+    <label for="opt2" class="option">Kẹo</label>
+
+    <input class="selectopt" name="test" type="radio" id="opt3" (click)="getCakes()">
+    <label for="opt3" class="option">Bánh</label>
+
+    <input class="selectopt" name="test" type="radio" id="opt4" (click)="getSnack()">
+    <label for="opt4" class="option">Snack</label>
+
+    <input class="selectopt" name="test" type="radio" id="opt5" (click)="getFreshwater()">
+    <label for="opt4" class="option">Nước ngọt</label>
+</div> -->
+
+<div class="dropdown">
+  <label for="filter">Bộ lọc:</label> &nbsp;
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" id="filter" style="background-color:#FF4B57;">
+    Chọn thuộc tính
+  </button>
+  <div class="dropdown-menu">
+    <!-- <a class="dropdown-item" name="all" id="all" (click)="getAllProducts()" checked href="#">Tất cả sản phẩm</a>
+    <a class="dropdown-item" name="cake" id="cake" (click)="getCakes()" href="#">Bánh</a>
+    <a class="dropdown-item" name="candy" id="candy" (click)="getCandy()" href="#">Kẹo</a>
+    <a class="dropdown-item" name="water" id="water" (click)="getFreshwater()" href="#">Nước ngọt</a>
+    <a class="dropdown-item" name="snack" id="snack" (click)="getSnack()" href="#">Snack</a> -->
+    <a class="dropdown-item" [routerLink]="'products'">
+      <input class="selectopt" name="all" type="radio" id="opt1" (click)="getAllProducts()" checked>&nbsp;
+      <label for="opt1" class="option">Tất cả</label>
+    </a>
+
+    <a class="dropdown-item" [routerLink]="'candy'">
+      <input class="selectopt" name="candy" type="radio" id="opt2" (click)="getCandy()">&nbsp;
+      <label for="opt2" class="option">Kẹo</label>
+    </a>
+    
+    <a class="dropdown-item" [routerLink]="'cakes'">
+      <input class="selectopt" name="cakes" type="radio" id="opt3" (click)="getCakes()">&nbsp;
+      <label for="opt3" class="option">Bánh</label>
+    </a>
+    
+    <a class="dropdown-item" [routerLink]="'snack'">
+      <input class="selectopt" name="snack" type="radio" id="opt4" (click)="getSnack()"> &nbsp;
+      <label for="opt4" class="option">Snack</label>
+    </a>
+    
+    <a class="dropdown-item" [routerLink]="'freshwater'">
+      <input class="selectopt" name="freswater" type="radio" id="opt5" (click)="getFreshwater()"> &nbsp;
+      <label for="opt5" class="option">Nước ngọt</label>
+    </a>
+  </div>
+</div>

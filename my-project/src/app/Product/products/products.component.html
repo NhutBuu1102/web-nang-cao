@@ -1,0 +1,60 @@
+<!-- <section>
+    <div>
+        <table width="100%">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>SKU</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th sryle="width:25%">Description</th>
+            </tr>
+            <tr *ngFor="let p of products">
+                <td>
+                    <u>Sửa</u> <br>
+                    <u>Xóa</u> 
+                    <img src="../assets/logo.png" alt="">
+                    <img src="/src/assets/trash.png" alt="">
+                </td>
+                <td>{{p.title}}</td>
+                <td>{{p.category}}</td>
+                <td>{{p._id}}</td>
+                <td>{{p.price}}</td>
+                <td><img src="{{p.image}}" width="50px" height="50px" alt=""></td>
+                <td>{{p.description}}</td>
+            </tr>
+        </table>
+    </div>
+</section>
+ -->
+
+<table class="table table-striped" style="margin-top: 15px;">
+    <thead thead-dark>
+      <tr style="text-align: center; align-items: center; justify-content: center; margin:0">
+        <th scope="col"></th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Nhóm sản phẩm</th>
+        <th scope="col">SKU</th>
+        <th scope="col">Giá sản phẩm</th>
+        <th scope="col">Hình ảnh sản phẩm</th>
+        <th scope="col">Mô tả sản phẩm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <th scope="row">
+            <u>Sửa</u> <br>
+            <u>Xóa</u> 
+            <img src="../assets/logo.png" alt="">
+            <img src="/src/assets/trash.png" alt="">
+        </th>
+        <th scope="row">{{p.title}}</th>
+        <th scope="row">{{p.category}}</th>
+        <th scope="row">{{p._id}}</th>
+        <th scope="row">{{p.price}}</th>
+        <th scope="row"><img src="{{p.image}}" width="50px" height="50px" alt=""></th>
+        <th scope="row">{{p.description}}</th>
+      </tr>
+    </tbody>
+</table>

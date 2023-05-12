@@ -1,0 +1,9 @@
+.select {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    width:200px;
+    height:40px;
+    float: right;
+    margin: 0 15px 15px 0;
+  }
