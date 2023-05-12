@@ -43,11 +43,9 @@
     </thead>
     <tbody>
       <tr *ngFor="let p of products">
-        <th scope="row">
-            <u>Sửa</u> <br>
-            <u>Xóa</u> 
-            <img src="../assets/logo.png" alt="">
-            <img src="../assets/trash.png" alt="">
+        <th scope="row" style="flex-direction: row;">
+            <u><img src="../assets/logo.png" style="width:10px; height:10px" alt="">Sửa</u> <br>
+            <u><img src="../assets/trash.png" style="width:10px; height:10px" alt="">Xóa</u> 
         </th>
         <th scope="row">{{p.title}}</th>
         <th scope="row">{{p.category}}</th>
